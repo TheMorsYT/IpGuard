@@ -1,0 +1,37 @@
+kick-unauthorized-ip: |-
+  &c&lACCESO DENEGADO
+  
+  &7La cuenta &e%player% &7está protegida por verificación de IP.
+  &7¡Tu dirección IP (&c%ip%&7) no está autorizada!
+kick-unauthorized-op: |-
+  &c&lALERTA DE SEGURIDAD — OP NO AUTORIZADO
+  
+  &7La cuenta &e%player% &7tiene permisos de operador (OP),
+  &7¡pero tu dirección IP (&c%ip%&7) no está autorizada en IpGuard!
+admin-alert: "&8[&c&lIpGuard&8] &7Intento de acceso bloqueado para &e%player% &7desde IP no autorizada: &c%ip%"
+admin-alert-op: "&8[&4&lIpGuard OP&8] &7Cuenta OP no autorizada expulsada: &e%player% &7(IP: &c%ip%&7)"
+console-blocked-log: "Intento de acceso bloqueado para la cuenta protegida '%player%' desde la IP: %ip%"
+console-blocked-op-log: "Acceso OP no autorizado bloqueado para la cuenta '%player%' desde la IP: %ip%"
+console-enabled: "¡IpGuard activado! Cuentas protegidas: %count% | Idioma: %lang%"
+console-disabled: "IpGuard desactivado."
+reloaded: "&8[&a&lIpGuard&8] &a¡Configuración e idioma recargados correctamente!"
+no-permission: "&cNo tienes permiso para ejecutar este comando."
+list-empty: "&8[&e&lIpGuard&8] &7La lista de cuentas protegidas está vacía."
+list-header: "&8[&a&lIpGuard&8] &7Cuentas protegidas:"
+list-entry: " &8- &e%player%&7: %ips%"
+list-no-ips: "&c(sin IPs permitidas)"
+usage-addip: "&cUso: /%label% addip <jugador> <ip>"
+usage-removeip: "&cUso: /%label% removeip <jugador> <ip>"
+usage-lang: "&cUso: /%label% lang <en|ru|uk|de|es|auto>"
+ip-added: "&8[&a&lIpGuard&8] &7IP &a%ip% &7añadida para la cuenta &e%player%"
+ip-already-exists: "&8[&e&lIpGuard&8] &7La IP &e%ip% &7ya está permitida para &e%player%"
+ip-removed: "&8[&a&lIpGuard&8] &7IP &c%ip% &7eliminada de la cuenta &e%player%"
+ip-not-found: "&8[&c&lIpGuard&8] &7No se encontró la IP &c%ip% &7para &e%player%"
+lang-changed: "&8[&a&lIpGuard&8] &7Idioma cambiado a &e%lang%&7."
+lang-invalid: "&8[&c&lIpGuard&8] &cIdioma desconocido '&e%lang%&c'. Disponibles: &een, ru, uk, de, es, auto"
+help-header: "&8======== [&a&lIpGuard&8] ========"
+help-reload: "&e/%label% reload &7- Recargar configuración e idioma"
+help-list: "&e/%label% list &7- Mostrar cuentas protegidas e IPs"
+help-addip: "&e/%label% addip <jugador> <ip> &7- Añadir IP permitida"
+help-removeip: "&e/%label% removeip <jugador> <ip> &7- Eliminar IP permitida"
+help-lang: "&e/%label% lang <código|auto> &7- Cambiar idioma del plugin"

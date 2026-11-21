@@ -1,0 +1,37 @@
+kick-unauthorized-ip: |-
+  &c&lZUGRIFF VERWEIGERT
+  
+  &7Das Konto &e%player% &7ist durch eine IP-Überprüfung geschützt.
+  &7Deine IP-Adresse (&c%ip%&7) ist nicht autorisiert!
+kick-unauthorized-op: |-
+  &c&lSICHERHEITSWARNUNG — UNAUTORISIERTER OP
+  
+  &7Das Konto &e%player% &7besitzt Operator-Rechte (OP),
+  &7aber deine IP-Adresse (&c%ip%&7) ist nicht in IpGuard autorisiert!
+admin-alert: "&8[&c&lIpGuard&8] &7Blockierter Anmeldeversuch für &e%player% &7von fremder IP: &c%ip%"
+admin-alert-op: "&8[&4&lIpGuard OP&8] &7Unautorisiertes OP-Konto &e%player% &7gekickt (IP: &c%ip%&7)"
+console-blocked-log: "Blockierter Anmeldeversuch für geschütztes Konto '%player%' von IP: %ip%"
+console-blocked-op-log: "Unautorisierter OP-Zugriff für Konto '%player%' von IP blockiert: %ip%"
+console-enabled: "IpGuard aktiviert! Geschützte Konten: %count% | Sprache: %lang%"
+console-disabled: "IpGuard deaktiviert."
+reloaded: "&8[&a&lIpGuard&8] &aKonfiguration und Sprachdateien neu geladen!"
+no-permission: "&cDu hast keine Berechtigung für diesen Befehl."
+list-empty: "&8[&e&lIpGuard&8] &7Die Liste der geschützten Konten ist leer."
+list-header: "&8[&a&lIpGuard&8] &7Geschützte Konten:"
+list-entry: " &8- &e%player%&7: %ips%"
+list-no-ips: "&c(keine erlaubten IPs)"
+usage-addip: "&cVerwendung: /%label% addip <Spieler> <IP>"
+usage-removeip: "&cVerwendung: /%label% removeip <Spieler> <IP>"
+usage-lang: "&cVerwendung: /%label% lang <en|ru|uk|de|es|auto>"
+ip-added: "&8[&a&lIpGuard&8] &7IP &a%ip% &7für Konto &e%player% &7hinzugefügt"
+ip-already-exists: "&8[&e&lIpGuard&8] &7IP &e%ip% &7ist bereits für &e%player% &7erlaubt"
+ip-removed: "&8[&a&lIpGuard&8] &7IP &c%ip% &7von Konto &e%player% &7entfernt"
+ip-not-found: "&8[&c&lIpGuard&8] &7IP &c%ip% &7wurde für &e%player% &7nicht gefunden"
+lang-changed: "&8[&a&lIpGuard&8] &7Sprache geändert auf &e%lang%&7."
+lang-invalid: "&8[&c&lIpGuard&8] &cUnbekannte Sprache '&e%lang%&c'. Verfügbar: &een, ru, uk, de, es, auto"
+help-header: "&8======== [&a&lIpGuard&8] ========"
+help-reload: "&e/%label% reload &7- Konfiguration und Sprache neu laden"
+help-list: "&e/%label% list &7- Geschützte Konten und IPs anzeigen"
+help-addip: "&e/%label% addip <Spieler> <IP> &7- Erlaubte IP hinzufügen"
+help-removeip: "&e/%label% removeip <Spieler> <IP> &7- Erlaubte IP entfernen"
+help-lang: "&e/%label% lang <Code|auto> &7- Sprache ändern"

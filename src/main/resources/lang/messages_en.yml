@@ -1,0 +1,37 @@
+kick-unauthorized-ip: |-
+  &c&lACCESS DENIED
+  
+  &7Account &e%player% &7is protected by IP verification.
+  &7Your IP address (&c%ip%&7) is not authorized!
+kick-unauthorized-op: |-
+  &c&lSECURITY ALERT — UNAUTHORIZED OP
+  
+  &7Account &e%player% &7has operator (OP) privileges,
+  &7but your IP address (&c%ip%&7) is not whitelisted in IpGuard!
+admin-alert: "&8[&c&lIpGuard&8] &7Blocked login attempt for &e%player% &7from unauthorized IP: &c%ip%"
+admin-alert-op: "&8[&4&lIpGuard OP&8] &7Kicked unauthorized OP account &e%player% &7(IP: &c%ip%&7)"
+console-blocked-log: "Blocked login attempt for protected account '%player%' from IP: %ip%"
+console-blocked-op-log: "Blocked unauthorized OP access for account '%player%' from IP: %ip%"
+console-enabled: "IpGuard enabled! Protected accounts: %count% | Language: %lang%"
+console-disabled: "IpGuard disabled."
+reloaded: "&8[&a&lIpGuard&8] &aConfiguration and localization reloaded!"
+no-permission: "&cYou do not have permission to execute this command."
+list-empty: "&8[&e&lIpGuard&8] &7The protected accounts list is empty."
+list-header: "&8[&a&lIpGuard&8] &7Protected accounts:"
+list-entry: " &8- &e%player%&7: %ips%"
+list-no-ips: "&c(no allowed IPs)"
+usage-addip: "&cUsage: /%label% addip <player> <ip>"
+usage-removeip: "&cUsage: /%label% removeip <player> <ip>"
+usage-lang: "&cUsage: /%label% lang <en|ru|uk|de|es|auto>"
+ip-added: "&8[&a&lIpGuard&8] &7Added IP &a%ip% &7for account &e%player%"
+ip-already-exists: "&8[&e&lIpGuard&8] &7IP &e%ip% &7is already allowed for &e%player%"
+ip-removed: "&8[&a&lIpGuard&8] &7Removed IP &c%ip% &7from account &e%player%"
+ip-not-found: "&8[&c&lIpGuard&8] &7IP &c%ip% &7was not found for &e%player%"
+lang-changed: "&8[&a&lIpGuard&8] &7Language changed to &e%lang%&7."
+lang-invalid: "&8[&c&lIpGuard&8] &cUnknown language '&e%lang%&c'. Available: &een, ru, uk, de, es, auto"
+help-header: "&8======== [&a&lIpGuard&8] ========"
+help-reload: "&e/%label% reload &7- Reload config and language files"
+help-list: "&e/%label% list &7- Show protected accounts and allowed IPs"
+help-addip: "&e/%label% addip <player> <ip> &7- Add an allowed IP"
+help-removeip: "&e/%label% removeip <player> <ip> &7- Remove an allowed IP"
+help-lang: "&e/%label% lang <code|auto> &7- Switch plugin language"

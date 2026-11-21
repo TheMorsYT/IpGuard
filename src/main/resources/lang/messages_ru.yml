@@ -1,0 +1,37 @@
+kick-unauthorized-ip: |-
+  &c&lДОСТУП ЗАПРЕЩЁН
+  
+  &7На аккаунт &e%player% &7можно зайти только с доверенного IP-адреса.
+  &7Ваш IP (&c%ip%&7) не находится в белом списке!
+kick-unauthorized-op: |-
+  &c&lЗАЩИТА СЕРВЕРА — НЕСАНКЦИОНИРОВАННЫЙ OP
+  
+  &7На аккаунте &e%player% &7обнаружены права оператора (OP),
+  &7но ваш IP (&c%ip%&7) не привязан к этому аккаунту в IpGuard!
+admin-alert: "&8[&c&lIpGuard&8] &7Попытка входа на защищённый ник &e%player% &7с чужого IP: &c%ip%"
+admin-alert-op: "&8[&4&lIpGuard OP&8] &7Заблокирован аккаунт с OP без привязки IP: &e%player% &7(IP: &c%ip%&7)"
+console-blocked-log: "Заблокирована попытка входа на защищённый аккаунт '%player%' с IP: %ip%"
+console-blocked-op-log: "Заблокирован несанкционированный доступ с правами OP на аккаунте '%player%' с IP: %ip%"
+console-enabled: "IpGuard успешно включён! Защищено аккаунтов: %count% | Язык: %lang%"
+console-disabled: "IpGuard выключен."
+reloaded: "&8[&a&lIpGuard&8] &aКонфигурация и локализация успешно перезагружены!"
+no-permission: "&cУ вас нет прав для выполнения этой команды."
+list-empty: "&8[&e&lIpGuard&8] &7Список защищённых игроков пуст."
+list-header: "&8[&a&lIpGuard&8] &7Защищённые аккаунты:"
+list-entry: " &8- &e%player%&7: %ips%"
+list-no-ips: "&c(нет разрешённых IP)"
+usage-addip: "&cИспользование: /%label% addip <ник> <ip>"
+usage-removeip: "&cИспользование: /%label% removeip <ник> <ip>"
+usage-lang: "&cИспользование: /%label% lang <en|ru|uk|de|es|auto>"
+ip-added: "&8[&a&lIpGuard&8] &7Добавлен IP &a%ip% &7для ника &e%player%"
+ip-already-exists: "&8[&e&lIpGuard&8] &7IP &e%ip% &7уже есть в списке для &e%player%"
+ip-removed: "&8[&a&lIpGuard&8] &7Удалён IP &c%ip% &7у ника &e%player%"
+ip-not-found: "&8[&c&lIpGuard&8] &7IP &c%ip% &7не найден у ника &e%player%"
+lang-changed: "&8[&a&lIpGuard&8] &7Язык плагина изменён на &e%lang%&7."
+lang-invalid: "&8[&c&lIpGuard&8] &cНеизвестный язык '&e%lang%&c'. Доступные: &een, ru, uk, de, es, auto"
+help-header: "&8======== [&a&lIpGuard&8] ========"
+help-reload: "&e/%label% reload &7- Перезагрузить конфиг и локализацию"
+help-list: "&e/%label% list &7- Показать защищённые ники и их IP"
+help-addip: "&e/%label% addip <ник> <ip> &7- Добавить разрешённый IP"
+help-removeip: "&e/%label% removeip <ник> <ip> &7- Удалить разрешённый IP"
+help-lang: "&e/%label% lang <код|auto> &7- Изменить язык плагина"

@@ -1,0 +1,37 @@
+kick-unauthorized-ip: |-
+  &c&lДОСТУП ЗАБОРОНЕНО
+  
+  &7На акаунт &e%player% &7можна зайти лише з довіреної IP-адреси.
+  &7Ваш IP (&c%ip%&7) відсутній у білому списку!
+kick-unauthorized-op: |-
+  &c&lЗАХИСТ СЕРВЕРА — НЕСАНКЦІОНОВАНИЙ OP
+  
+  &7На акаунті &e%player% &7виявлено права оператора (OP),
+  &7але ваш IP (&c%ip%&7) не прив'язаний до цього акаунта в IpGuard!
+admin-alert: "&8[&c&lIpGuard&8] &7Спроба входу на захищений нік &e%player% &7з чужого IP: &c%ip%"
+admin-alert-op: "&8[&4&lIpGuard OP&8] &7Заблоковано акаунт з OP без прив'язки IP: &e%player% &7(IP: &c%ip%&7)"
+console-blocked-log: "Заблоковано спробу входу на захищений акаунт '%player%' з IP: %ip%"
+console-blocked-op-log: "Заблоковано несанкціонований доступ з правами OP на акаунті '%player%' з IP: %ip%"
+console-enabled: "IpGuard успішно увімкнено! Захищено акаунтів: %count% | Мова: %lang%"
+console-disabled: "IpGuard вимкнено."
+reloaded: "&8[&a&lIpGuard&8] &aКонфігурацію та локалізацію успішно перезавантажено!"
+no-permission: "&cУ вас немає прав для виконання цієї команди."
+list-empty: "&8[&e&lIpGuard&8] &7Список захищених гравців порожній."
+list-header: "&8[&a&lIpGuard&8] &7Захищені акаунти:"
+list-entry: " &8- &e%player%&7: %ips%"
+list-no-ips: "&c(немає дозволених IP)"
+usage-addip: "&cВикористання: /%label% addip <нік> <ip>"
+usage-removeip: "&cВикористання: /%label% removeip <нік> <ip>"
+usage-lang: "&cВикористання: /%label% lang <en|ru|uk|de|es|auto>"
+ip-added: "&8[&a&lIpGuard&8] &7Додано IP &a%ip% &7для ніка &e%player%"
+ip-already-exists: "&8[&e&lIpGuard&8] &7IP &e%ip% &7вже є у списку для &e%player%"
+ip-removed: "&8[&a&lIpGuard&8] &7Видалено IP &c%ip% &7у ніка &e%player%"
+ip-not-found: "&8[&c&lIpGuard&8] &7IP &c%ip% &7не знайдено у ніка &e%player%"
+lang-changed: "&8[&a&lIpGuard&8] &7Мову плагіна змінено на &e%lang%&7."
+lang-invalid: "&8[&c&lIpGuard&8] &cНевідома мова '&e%lang%&c'. Доступні: &een, ru, uk, de, es, auto"
+help-header: "&8======== [&a&lIpGuard&8] ========"
+help-reload: "&e/%label% reload &7- Перезавантажити конфіг та локалізацію"
+help-list: "&e/%label% list &7- Показати захищені ніки та їх IP"
+help-addip: "&e/%label% addip <нік> <ip> &7- Додати дозволений IP"
+help-removeip: "&e/%label% removeip <нік> <ip> &7- Видалити дозволений IP"
+help-lang: "&e/%label% lang <код|auto> &7- Змінити мову плагіна"

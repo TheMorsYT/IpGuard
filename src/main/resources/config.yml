@@ -1,0 +1,51 @@
+# ==========================================
+#          IpGuard - Configuration
+#      Supported versions: 1.16.5 - 26.3
+# ==========================================
+
+# Interface and kick message language / Язык сообщений и ошибок при кике.
+# Available / Доступные:
+#   "en"   - English
+#   "ru"   - Русский
+#   "uk"   - Українська
+#   "de"   - Deutsch
+#   "es"   - Español
+#   "auto" - Automatically detect from client or system locale / Автоопределение языка
+language: "en"
+
+# Log blocked login and OP attempts to console / Логировать блокировки в консоль
+log-blocked-attempts: true
+
+# Notify online admins (with ipguard.admin permission) / Уведомлять админов в игре
+notify-admins-in-game: true
+
+# OP Account Protection (Anti-ForceOP) / Защита аккаунтов с OP (Анти-взлом опки)
+# If enabled, any player with OP status MUST be listed in 'protected-players'
+# and connected from a whitelisted IP. If a player gets OP while online without
+# a whitelisted IP, their commands/actions are blocked and they are kicked immediately.
+#
+# Если включено, любой игрок с OP обязан находиться в списке 'protected-players'
+# и заходить со своего разрешённого IP. Если игрок каким-то образом получит OP
+# во время игры (через уязвимость/хаки), его сразу выкинет с сервера.
+protect-op-accounts: true
+
+# Automatically revoke OP (deop) from unauthorized players before kicking them
+# Автоматически снимать OP (deop) перед киком, если у игрока нет разрешённого IP
+auto-deop-unauthorized: true
+
+# Interval in ticks (20 ticks = 1 second) for background OP status verification
+# Интервал фоновой проверки игроков на наличие несанкционированной OP (20 тиков = 1 сек)
+op-check-interval-ticks: 20
+
+# Protected accounts and their allowed IP addresses.
+# Nickname check is case-insensitive.
+#
+# Список защищённых аккаунтов и разрешённых для них IP-адресов.
+# Проверка ника не зависит от регистра букв.
+#
+# Example / Пример:
+# protected-players:
+#   ExamplePlayer:
+#     - "127.0.0.1"
+#     - "192.168.1.10"
+protected-players: {}

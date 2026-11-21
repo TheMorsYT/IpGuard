@@ -1,0 +1,17 @@
+name: IpGuard
+version: '${version}'
+main: com.ipguard.IpGuardPlugin
+api-version: '1.16'
+folia-supported: true
+description: Account IP protection plugin for Spigot and Paper (1.16.5 - 26.3)
+
+commands:
+  ipguard:
+    description: Manage protected accounts, allowed IPs, and language
+    usage: /<command> <reload|list|addip|removeip|lang>
+    permission: ipguard.admin
+
+permissions:
+  ipguard.admin:
+    description: Full access to IpGuard commands and security alerts
+    default: op
